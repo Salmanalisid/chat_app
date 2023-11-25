@@ -26,9 +26,15 @@ const Search = () =>{
     };
 
 
-    const handleKey = (e)=>{
-        e.code === "Enter" && handleSearch();
+    // const handleKey = (e)=>{
+    //     e.code === "Enter" && handleSearch();
+    // }
+
+    const handleKey = (e) => {
+    if (e.key === "Enter" || e.keyCode === 13 || || e.code === "NumpadEnter") {
+        handleSearch();
     }
+}
     const  handleSelect = async()=>{
         // check whether the group (chats in firestore) exists, if not create
         const combinedId = 
