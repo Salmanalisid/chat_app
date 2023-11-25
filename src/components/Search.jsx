@@ -31,7 +31,7 @@ const Search = () =>{
     // }
 
     const handleKey = (e) => {
-    if (e.key === "Enter" || e.keyCode === 13 || || e.code === "NumpadEnter") {
+    if (e.key === "Enter" || e.keyCode === 13 || e.code === "NumpadEnter") {
         handleSearch();
     }
 }
@@ -82,6 +82,7 @@ const Search = () =>{
                 type="text" 
                 placeholder="Find a user" 
                 onKeyDown={handleKey} 
+                onKeyUp={handleKey}
                 onChange={(e) => setUsername(e.target.value)}
                 value={username}    
             />
