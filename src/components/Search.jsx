@@ -11,6 +11,7 @@ const Search = () =>{
     const {currentUser} = useContext(AuthContext)
 
     const handleSearch = async()=>{
+        alert("click");
         const q = query(
                     collection(db,"users"),
                     where("displayName","==", username))
@@ -31,9 +32,8 @@ const Search = () =>{
     // }
 
     const handleKey = (e) => {
-    if (e.key === "Enter" || e.keyCode === 13 || e.code === "NumpadEnter") {
-        handleSearch();
-    }
+    e.key === "Enter" || e.keyCode === 13 || e.code === "NumpadEnter")  && handleSearch();
+    
 }
     const  handleSelect = async()=>{
         // check whether the group (chats in firestore) exists, if not create
