@@ -22,7 +22,7 @@ const Chats = () =>{
         return() => {
             unsub();
         };
-       };
+       }
        currentUser.uid && getChats();
         
     },[currentUser.uid]);
@@ -46,7 +46,7 @@ const Chats = () =>{
                     <p>{chat[1].lastMessage?.text}</p>
                 </div>
                 </div>
-            ))};
+            ))}
            
            
            
