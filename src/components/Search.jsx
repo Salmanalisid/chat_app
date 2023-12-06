@@ -86,6 +86,7 @@ const Search = () =>{
                 onChange={(e) => setUsername(e.target.value)}
                 value={username}    
             />
+            <button onClick={handleSearch}>Send</button>
            </div>
            {err && <span>User not found!</span>}
            {user && (
