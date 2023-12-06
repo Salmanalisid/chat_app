@@ -168,6 +168,16 @@
                 color: lightgray;
               }
             }
+            button {
+              
+              border: none;
+              border-radius: 10px;
+              margin-top: 10px;
+              padding: 10px 15px;
+              color: white;
+              background-color: #8da4f1;
+              cursor: pointer;
+            }
           }
         }
             // position:relative;
